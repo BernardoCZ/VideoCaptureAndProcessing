@@ -1,0 +1,2 @@
+Caso ocorra erro na execução, talvez seja preciso colocar o arquivo "opencv_java4100.dll",
+presente em ".idea/libraries", na pasta do seu opencv: "C:\opencv\build\x64\vc16\bin".
