@@ -1,7 +1,7 @@
 import org.opencv.core.Core;
 
 import Alert.UserAlert;
-import Screen.CameraScreen;
+import Screen.HomeScreen;
 
 public class App {
     public static void main(String[] args){
@@ -10,10 +10,9 @@ public class App {
       System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
       try {
-         CameraScreen cameraScreen = new CameraScreen();
-         cameraScreen.startCamera();
+         new HomeScreen();
       } catch (Exception e) {
-         UserAlert userAlert = new UserAlert("ERRO - Erro ao criar a tela de câmera"); 
+         UserAlert userAlert = new UserAlert("ERRO - Erro ao criar Tela Inicial"); 
       }
 
     }
